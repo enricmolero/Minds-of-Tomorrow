@@ -1,154 +1,175 @@
 body {
-    font-family: "Comfortaa", sans-serif;
+    font-family: "Comfortaa", sans-serif; /* Define la fuente principal del sitio */
 }
+
 .cabecera {
-    background-image: url(./img/banner-2.jpg);
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 40px;
-    color: black;
-    font-weight: bold;
+    background-image: url(./img/banner-2.jpg); /* Establece una imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    width: 100vw; /* Usa todo el ancho de la ventana */
+    height: 100vh; /* Usa toda la altura de la ventana */
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+    font-size: 40px; /* Tamaño de fuente grande */
+    color: black; /* Color del texto negro */
+    font-weight: bold; /* Hace que el texto sea negrita */
 }
+
 .title {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 200px; /* Margen izquierdo de 200px */
+    margin-right: 200px; /* Margen derecho de 200px */
 }
+
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    gap: 30px;
-    flex-wrap: wrap;
+    width: 100%; /* Usa todo el ancho disponible */
+    height: 100vh; /* Usa toda la altura de la ventana */
+    display: flex; /* Usa flexbox para organizar elementos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-color: #fff; /* Fondo blanco */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    gap: 30px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
 }
+
 .text-content {
-    flex: 1;
-    padding: 20px;
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    padding: 20px; /* Agrega espacio interno */
 }
+
 .text-content h1 {
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 36px; /* Tamaño grande para el título */
+    font-weight: bold; /* Texto en negrita */
 }
+
 .text-content p {
-    font-size: 18px;
-    color: #333;
+    font-size: 18px; /* Tamaño de fuente más pequeño */
+    color: #333; /* Color de texto oscuro */
 }
+
 .image-content {
-    flex: 1;
-    position: relative;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    position: relative; /* Posicionamiento relativo */
+    text-align: center; /* Centra el contenido */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
+
 .image-content img {
-    max-width: 100%;
-    max-height: 300px;
-    height: auto;
+    max-width: 100%; /* Imagen ocupa el ancho disponible sin pasarse */
+    max-height: 300px; /* Altura máxima de 300px */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
-.cuatro {
-    text-align: center;
-    background-color: #29e89a;
-    color: black;
-    margin: 0;
-    padding: 0;
+
+.programs {
+    background: #2dc670; /* Color de fondo verde */
+    color: rgb(2, 2, 2); /* Color de texto negro */
+    padding: 30px 5%; /* Espaciado interno */
 }
-.main-container {
-    max-width: 900px;
-    margin: auto;
-    padding: 50px 20px;
+
+.programs h2 {
+    margin-bottom: 20px; /* Espacio inferior de 20px */
 }
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
+
+.program-list {
+    display: flex; /* Usa flexbox para organizar los programas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espacio entre los programas */
 }
+
 .program {
-    text-align: center;
-    width: 200px;
+    text-align: center; /* Centra el texto */
+    width: 22%; /* Ocupa el 22% del ancho */
 }
+
 .program img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid black;
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    border-radius: 10px; /* Bordes redondeados */
 }
-.program p {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 10px;
+
+.program-title {
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 5px; /* Espacio inferior de 5px */
 }
-@media (max-width: 768px) {
+
+@media (max-width: 768px) { /* Ajustes para pantallas pequeñas */
     .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row; /* Los elementos se colocan en fila */
+        flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas */
+        justify-content: center; /* Centra los elementos */
     }
+
     .program {
-        width: 45%;
+        width: 45%; /* Cada programa ocupa casi la mitad del ancho */
     }
 }
+
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #fff;
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #fff; /* Fondo blanco */
 }
+
 .content-text {
-    flex: 1;
-    padding: 20px;
+    flex: 1; /* Ocupa la mitad del espacio */
+    padding: 20px; /* Espaciado interno */
 }
+
 .content-text p {
-    font-size: 16px;
-    color: #333;
+    font-size: 16px; /* Tamaño de fuente pequeño */
+    color: #333; /* Color de texto oscuro */
 }
+
 .image-container3 {
-    flex: 1;
-    position: relative;
+    flex: 1; /* Ocupa la mitad del espacio */
+    position: relative; /* Posicionamiento relativo */
 }
+
 .image-container3 img {
-    width: 100%;
-    border-radius: 8px;
+    width: 100%; /* La imagen ocupa todo el ancho disponible */
+    border-radius: 8px; /* Bordes redondeados */
 }
+
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #fff;
-    width: 100%;
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Usa toda la altura de la ventana */
+    background-color: #fff; /* Fondo blanco */
+    width: 100%; /* Usa todo el ancho disponible */
 }
+
 .image-container img {
-    width: 25%;
-    height: auto;
+    width: 25%; /* Cada imagen ocupa el 25% del ancho disponible */
+    height: auto; /* Mantiene la proporción original */
 }
+
 .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    background-color: #54a3fc;
-    color: black;
-    text-align: center;
-    font-size: 60px;
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 50vh; /* Ocupa la mitad de la altura de la ventana */
+    background-color: #54a3fc; /* Color de fondo azul */
+    color: black; /* Color de texto negro */
+    text-align: center; /* Centra el texto */
+    font-size: 60px; /* Tamaño de fuente grande */
 }
+
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: black;
-    color: white;
+    display: flex; /* Usa flexbox */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
 }
+
 .footer div {
-    text-align: center;
+    text-align: center; /* Centra el contenido */
 }
+
